@@ -1,0 +1,135 @@
+$colorFondo: rgb(255, 231, 218);
+$colorFondoSec: rgb(107, 160, 82);
+$colorTexto: rgb(27, 26, 26);
+$colorTextoSec: rgb(230, 221, 214);
+$fontSizeBase: 14px;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+:root{
+    font-size: $fontSizeBase;
+}
+@mixin setFlex ($flexDirec, $alig){
+    display: flex;
+    flex-direction: $flexDirec;
+    flex-wrap: wrap;
+    justify-content: $alig;
+}
+header{
+    background-color: $colorFondoSec;
+    padding: 0.5rem;
+    text-align: center;
+    
+
+    h1{
+        color: $colorTextoSec;
+        font-family: 'Oswald', sans-serif;
+        font-size: $fontSizeBase * 2;
+    }
+}
+.mainMenu{
+    background-color: $colorFondo;
+    padding: 0.6rem;
+
+    ul{
+        @include setFlex(row, space-around);
+
+        a{
+            color: $colorTexto;
+            font-family: 'Oswald', sans-serif;
+            font-size: $fontSizeBase * 1.4;
+            margin: 0.3rem;
+            font-weight: bold;
+
+            &:hover{
+                color: rgb(80, 141, 80);
+            }
+        }
+    }
+}
+
+
+.sectionMain{
+    border-radius: 1.5rem;
+    margin: 6rem;
+    background-color: $colorFondo;
+    display: grid;
+    box-shadow: 2px 2px 4px;
+
+    grid-template-areas:
+    "titulo menuSeccion"
+    "Descripcion imagenDetalle"
+    "menuDetalle menuDetalle";;
+
+    h1{
+        font-family: 'Oswald', sans-serif;
+        text-align: center;
+        padding: 0.5rem;
+        font-size: $fontSizeBase * 1.7;  
+    }
+
+    .subMenu{
+        @include setFlex(row, space-around );
+
+        li{
+            padding-top: 0.1rem;
+
+            a{
+                color: $colorTexto;
+                font-family: 'Oswald', sans-serif;
+                font-size: $fontSizeBase *1.3;
+                font-weight: bold;
+
+                &:hover{
+                    color: rgb(80, 141, 80);
+                }
+
+            }
+        }
+    }
+}
+.descripcion{
+    @include setFlex(column, center);
+    margin: 0rem 1rem 1rem 1rem;
+
+    p{
+        font-family: 'Oswald', sans-serif;
+        font-size: $fontSizeBase * 1.2;
+        text-align: center;
+    }
+}
+.imagen{
+    max-width: 100%;
+    height: auto;
+    padding: 0.2rem 1.2rem;
+
+    img{
+        width: 20rem;
+        border-radius: 1rem;
+    }
+}
+.menuDet{
+    @include setFlex(column, center);
+        padding-top: 0rem;
+        padding-bottom: 1rem;
+
+        li{
+            text-align: center;
+
+            a{
+                color: $colorTexto;
+                font-size: $fontSizeBase * 1.4;
+                font-family: 'Oswald', sans-serif;
+                font-weight: bold;
+
+                &:hover{
+                    color: rgb(80, 141, 80);
+                }
+            }
+        }
+}

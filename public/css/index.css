@@ -1,0 +1,168 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 14px;
+}
+
+header {
+  background-color: #6ba052;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+header h1 {
+  color: #e6ddd6;
+  font-family: 'Oswald', sans-serif;
+  font-size: 28px;
+}
+
+.mainMenu {
+  background-color: #ffe7da;
+  padding: 0.6rem;
+}
+
+.mainMenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainMenu ul a {
+  color: #1b1a1a;
+  font-family: 'Oswald', sans-serif;
+  font-size: 19.6px;
+  margin: 0.3rem;
+  font-weight: bold;
+}
+
+.mainMenu ul a:hover {
+  color: #508d50;
+}
+
+.sectionMain {
+  border-radius: 1.5rem;
+  margin: 6rem;
+  background-color: #ffe7da;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-shadow: 2px 2px 4px;
+          box-shadow: 2px 2px 4px;
+      grid-template-areas: "titulo menuSeccion" "Descripcion imagenDetalle" "menuDetalle menuDetalle";
+}
+
+.sectionMain h1 {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 23.8px;
+}
+
+.sectionMain .subMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.sectionMain .subMenu li {
+  padding-top: 0.1rem;
+}
+
+.sectionMain .subMenu li a {
+  color: #1b1a1a;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18.2px;
+  font-weight: bold;
+}
+
+.sectionMain .subMenu li a:hover {
+  color: #508d50;
+}
+
+.descripcion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.descripcion p {
+  font-family: 'Oswald', sans-serif;
+  font-size: 16.8px;
+  text-align: center;
+}
+
+.imagen {
+  max-width: 100%;
+  height: auto;
+  padding: 0.2rem 1.2rem;
+}
+
+.imagen img {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+.menuDet {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 0rem;
+  padding-bottom: 1rem;
+}
+
+.menuDet li {
+  text-align: center;
+}
+
+.menuDet li a {
+  color: #1b1a1a;
+  font-size: 19.6px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bold;
+}
+
+.menuDet li a:hover {
+  color: #508d50;
+}
+/*# sourceMappingURL=index.css.map */
